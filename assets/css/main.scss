@@ -3,18 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import './style.scss';
-
-/* Variables */
-$primary-color: #EFE5DC;
-$secondary-color: #B07E50;
-$accent-color: #103C3B;
-$background-color: #FFFFFF;
-$text-color: #000000;
-$muted-color: #6C757D50;
-
-$header-font: 'Martel', serif;
-$body-font: 'Roboto', sans-serif;
-$alternate-font: 'Overpass', sans-serif;
+@import './utility.scss';
 
 /* Reset */
 /*
@@ -47,6 +36,7 @@ $alternate-font: 'Overpass', sans-serif;
   padding: 0;
   /* Add font-size: inherit to form elements for consistency */
   font: inherit;
+  scroll-behavior: smooth;
 }
 
 /*

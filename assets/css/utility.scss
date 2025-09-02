@@ -1,0 +1,11 @@
+.translucent {
+    width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(150, 150, 150, 0.25);
+  backdrop-filter: blur(10px);
+  padding: 4px 6px;
+  font-size: 12.5px;
+  font-family: $alternate-font;
+}
