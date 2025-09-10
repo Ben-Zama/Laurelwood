@@ -267,7 +267,7 @@
 
     <!-- Video Section -->
     <section class="video">
-      <img src="/images/video-background.webp" />
+      <video src="/video.mp4" autoplay muted loop></video>
       <div class="tint">
         <div class="play">
           <i class="bi bi-play-fill"></i>
@@ -327,7 +327,7 @@
           <i class="bi bi-clock-fill"></i>
           <div class="text">
             <h3>Opening Hours</h3>
-            <p>Mon to Sat 08:00 - 20:00</p>
+            <p>Mon to Fri 08:00 - 17:00</p>
           </div>
         </div>
         <div class="box">

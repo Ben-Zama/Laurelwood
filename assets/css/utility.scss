@@ -1,11 +1,14 @@
+@import "./variables";
+
 .translucent {
-    width: fit-content;
+  width: fit-content;
+  padding: 4px 6px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: $alternate-font;
+  font-size: 12.5px;
   background: rgba(150, 150, 150, 0.25);
   backdrop-filter: blur(10px);
-  padding: 4px 6px;
-  font-size: 12.5px;
-  font-family: $alternate-font;
+  border-radius: 2px;
 }

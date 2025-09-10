@@ -1,17 +1,4 @@
-/* Variables */
-$primary-color: #f7f2ed;
-$secondary-color: #b07e50;
-$accent-color: #103c3b;
-$hero-background-color: #efe5dc;
-$background-color: #ffffff;
-$text-color: #000000;
-$muted-color: #6c757dbb;
-$table-color-odd: #f0e7dd;
-$table-color-even: #e8dacc;
-
-$header-font: "Martel", serif;
-$body-font: "Roboto", sans-serif;
-$alternate-font: "Overpass", sans-serif;
+@import './variables';
 
 /* Header and Mobile Menu */
 .main {
@@ -846,12 +833,7 @@ $alternate-font: "Overpass", sans-serif;
   position: relative;
   margin: 25px 0;
   overflow: hidden;
-  &:hover {
-    img {
-      transform: scale(1.1);
-    }
-  }
-  img {
+  video {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -909,6 +891,7 @@ $alternate-font: "Overpass", sans-serif;
 @media (min-width: 981px) {
   .video {
     margin: 75px 0;
+    max-height: 600px;
     .tint {
       .play {
         width: 100px;
