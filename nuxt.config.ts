@@ -4,4 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['../assets/css/main.scss'],
   ssr: false,
+  modules: ['nuxt-aos'],
+  aos: {
+    delay: 500,
+    duration: 2000
+  }
 })

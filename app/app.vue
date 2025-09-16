@@ -62,7 +62,7 @@
     </header>
 
     <!-- Hero section -->
-    <section class="hero">
+    <section data-aos="fade-down" class="hero">
 
       <div class="text">
         <div class="translucent">
@@ -80,7 +80,7 @@
     <!-- Overview section -->
     <section id="overview" class="overview">
 
-      <div class="text">
+      <div data-aos="fade-left" class="text">
         <div class="translucent">Home Overview</div>
         <h2>Luxury living where comfort meets timeless style, effortlessly</h2>
         <p>Experience the perfect blend of modern design and classic elegance in our stunning homes.</p>
@@ -88,22 +88,22 @@
       </div>
 
       <div class="features">
-        <div class="box">
+        <div data-aos="fade-up" class="box">
           <img src="/images/icons/home-1.png" alt="">
           <h3>Smart Home System</h3>
           <p>Control your home environment with the latest smart technology.</p>
         </div>
-        <div class="box">
+        <div data-aos="fade-up" class="box">
           <img src="/images/icons/solar.png" alt="">
           <h3>Solar Energy Panels</h3>
           <p>Harness the power of the sun to reduce your energy bills.</p>
         </div>
-        <div class="box">
+        <div data-aos="fade-up" class="box">
           <img src="/images/icons/aircondition.png" alt="">
           <h3>Central Air Conditioning</h3>
           <p>Enjoy optimal comfort with our state-of-the-art cooling systems.</p>
         </div>
-        <div class="box">
+        <div data-aos="fade-up" class="box">
           <img src="/images/icons/security.png" alt="">
           <h3>Home Security System</h3>
           <p>Keep your home safe with our advanced security features.</p>
@@ -115,19 +115,19 @@
     <!-- Room details -->
     <section id="rooms" class="room_details">
 
-      <div class="header">
+      <div data-aos="fade-down" class="header">
         <div class="translucent">Room Details</div>
         <h2>Discover Rooms</h2>
       </div>
 
-      <div class="selection">
+      <div data-aos="fade-right" class="selection">
         <p v-for="room in rooms" :key="room.name" @click="selectRoom(room)"
           :class="{ active: activeRoom.name === room.name }">{{ room.name }}</p>
       </div>
 
       <hr>
 
-      <div class="display">
+      <div data-aos="fade-left" class="display">
         <div class="text">
           <h2>{{ activeRoom.name }}</h2>
           <p>{{ activeRoom.description }}</p>
@@ -143,18 +143,18 @@
     <!-- Gallery -->
     <section id="gallery" class="gallery">
 
-      <div class="header">
+      <div data-aos="fade-up" class="header">
         <div class="translucent">Discover Gallery</div>
         <h2>Exterior & Interior</h2>
       </div>
 
-      <div class="selection">
+      <div data-aos="fade-up" class="selection">
         <p v-for="cat in categories" :key="cat" @click="selectCategory(cat)"
           :class="{ active: activeCategory === cat }"> {{ cat }} </p>
       </div>
 
       <div class="images" ref="gallery">
-        <div v-for="img in filteredImages" :key="img.src">
+        <div data-aos="fade-down" v-for="img in filteredImages" :key="img.src">
           <img :src="img.src" alt="">
         </div>
       </div>
@@ -166,19 +166,19 @@
 
       <div class="plan">
         <div class="text">
-          <div class="translucent">Discover</div>
-          <h2>Floorplan</h2>
-          <p>Explore the thoughtfully designed floorplan, offering spacious living areas, functional layouts, and
+          <div data-aos="fade-right" class="translucent">Discover</div>
+          <h2 data-aos="fade-right">Floorplan</h2>
+          <p data-aos="fade-right">Explore the thoughtfully designed floorplan, offering spacious living areas, functional layouts, and
             seamless flow between rooms. Each space is crafted to maximize comfort, convenience, and modern aesthetics,
             ensuring your home meets every lifestyle need.</p>
-          <div class="table">
+          <div data-aos="fade-left" class="table">
             <div v-for="info in roomSize" :key="info" class="row">
               <span>{{ info.room }}</span>
               <span>{{ info.size }}</span>
             </div>
           </div>
         </div>
-        <div class="image">
+        <div data-aos="fade-left" class="image">
           <swiper :modules="[Autoplay, Pagination]" :slides-per-view="1" :pagination="{ clickable: true }" loop
             :autoplay="{ delay: 5000 }">
             <swiper-slide>
@@ -191,7 +191,7 @@
         </div>
       </div>
 
-      <div class="features">
+      <div data-aos="fade-right" class="features">
         <div class="box">
           <img src="/images/icons/size.png" />
           <div>
@@ -227,34 +227,34 @@
     <!-- Highlights -->
     <section id="highlights" class="highlights">
 
-      <div class="header">
+      <div data-aos="fade-up" class="header">
         <div class="translucent">Near By Places</div>
         <h2>Highlights Nearby</h2>
       </div>
 
       <div class="grid">
-        <div class="box">
+        <div data-aos="fade-down" class="box">
           <div class="image">
             <img src="/images/school.webp" alt="">
           </div>
           <h3>School</h3>
           <p>4 miles</p>
         </div>
-        <div class="box">
+        <div data-aos="fade-down" class="box">
           <div class="image">
             <img src="/images/shopingmall.webp" alt="">
           </div>
           <h3>Shopping Mall</h3>
           <p>8 miles</p>
         </div>
-        <div class="box">
+        <div data-aos="fade-down" class="box">
           <div class="image">
             <img src="/images/university.webp" alt="">
           </div>
           <h3>University</h3>
           <p>12 miles</p>
         </div>
-        <div class="box">
+        <div data-aos="fade-down" class="box">
           <div class="image">
             <img src="/images/airport.webp" alt="">
           </div>
@@ -266,7 +266,7 @@
     </section>
 
     <!-- Video Section -->
-    <section class="video">
+    <section data-aos="fade-up" class="video">
       <video src="/video.mp4" autoplay muted loop></video>
       <div class="tint">
         <div class="play">
@@ -278,18 +278,18 @@
     <!-- Conact -->
     <section id="contact" class="contact">
 
-      <div class="header">
+      <div data-aos="fade-down" class="header">
         <div class="translucent">Contact Us</div>
         <h2>Schedule a Visit</h2>
       </div>
 
       <div class="box">
-        <div class="agent">
+        <div data-aos="fade-left" class="agent">
           <img src="/images/contact.webp" alt="">
           <h3>Emily Rodriguez</h3>
           <p>(555) 234-5678</p>
         </div>
-        <form @submit.prevent="">
+        <form  data-aos="fade-right" @submit.prevent="">
           <div class="input-control">
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
